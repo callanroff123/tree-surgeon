@@ -1,18 +1,19 @@
 # Architecture
 
 Browser
-→ Next.js
+→ Next.js app (`frontend/`)
 → Local typed content
 
 Future:
 Sanity replaces local content.
 Supabase only for operational data (quotes/bookings/customers).
 
-Suggested folders:
+Application folders:
 
-src/
-  app/
-  components/
-  content/
-  lib/
-  types/
+frontend/
+  src/
+    app/
+    components/
+    content/
+    lib/
+    types/
