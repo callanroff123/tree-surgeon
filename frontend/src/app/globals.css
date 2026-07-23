@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-limestone: #efe7d8;
+  --color-forest: #294537;
+  --color-bark: #584332;
+  --color-clay: #b96846;
+  --color-clay-light: #e5b18d;
+  --color-eucalyptus: #809171;
+  --color-paperbark: #d8c6a9;
+  --color-charcoal: #24221d;
+  --font-serif: Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--color-limestone); color: var(--color-charcoal); font-family: var(--font-sans); }
+a, button, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--color-clay); outline-offset: 4px; }
+.page-shell { width: min(100% - 2rem, 76rem); margin-inline: auto; }
+.skip-link { position: absolute; left: 1rem; top: -4rem; z-index: 10; padding: .75rem 1rem; background: var(--color-forest); color: var(--color-limestone); }
+.skip-link:focus { top: 1rem; }
+.brand-mark { display: inline-flex; align-items: center; gap: .625rem; color: var(--color-forest); font-family: var(--font-serif); font-size: 1.25rem; white-space: nowrap; }
+.brand-mark > span:first-child { display: grid; width: 2rem; height: 2rem; place-items: center; border: 1px solid currentColor; font-family: var(--font-sans); font-size: .7rem; font-weight: 700; letter-spacing: .08em; }
+.nav-link, .footer-list a { text-decoration: none; }
+.nav-link:hover, .footer-list a:hover { text-decoration: underline; text-underline-offset: .3em; }
+.eyebrow, .footer-heading { font-size: .7rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.text-link { align-items: center; gap: .75rem; border-bottom: 1px solid currentColor; padding-bottom: .35rem; font-size: .875rem; font-weight: 700; text-decoration: none; }
+.text-link span, .submit-button span { font-size: 1.25em; }
+.hero-section { background: var(--color-limestone); }
+.hero-media { display: flex; min-height: 28rem; flex-direction: column; justify-content: space-between; background: var(--color-eucalyptus); color: var(--color-charcoal); padding: 1rem; }
+.hero-media-art { display: grid; flex: 1; place-items: center; border: 1px solid rgb(36 34 29 / .35); background: var(--color-paperbark); padding: 2rem; }
+.hero-media svg { width: 100%; max-height: 29rem; fill: none; stroke: var(--color-forest); stroke-linecap: round; stroke-width: 3; }
+.hero-media figcaption { padding-top: .75rem; font-size: .75rem; color: rgb(36 34 29 / .75); }
+.service-rail { display: grid; grid-auto-columns: minmax(15rem, 19rem); grid-auto-flow: column; gap: 1rem; overflow-x: auto; padding-bottom: .5rem; scroll-snap-type: x mandatory; }
+.service-card { min-height: 18rem; scroll-snap-align: start; border: 1px solid rgb(243 239 230 / .3); padding: 1.5rem; }
+.field-label { display: grid; gap: .5rem; font-size: .875rem; font-weight: 700; }
+.field-label input, .field-label select, .field-label textarea { width: 100%; border: 1px solid rgb(28 28 26 / .55); border-radius: 0; background: rgb(243 239 230 / .15); color: var(--color-charcoal); font: inherit; font-weight: 400; padding: .75rem; }
+.field-label input:focus, .field-label select:focus, .field-label textarea:focus { outline: 2px solid var(--color-charcoal); outline-offset: 2px; }
+.quote-section .field-label input, .quote-section .field-label select, .quote-section .field-label textarea { border-color: var(--color-forest); background: var(--color-limestone); }
+.quote-section .field-label input:focus, .quote-section .field-label select:focus, .quote-section .field-label textarea:focus { outline-color: var(--color-clay); }
+.submit-button { display: inline-flex; align-items: center; gap: .75rem; border: 1px solid var(--color-charcoal); border-radius: 0; background: var(--color-charcoal); color: var(--color-limestone); cursor: pointer; font: inherit; font-weight: 700; padding: .875rem 1rem; }
+.submit-button:hover { background: transparent; color: var(--color-charcoal); }
+.footer-list { margin-top: 1rem; padding: 0; list-style: none; font-size: .875rem; line-height: 2; color: rgb(243 239 230 / .7); }
+@media (min-width: 40rem) { .page-shell { width: min(100% - 3rem, 76rem); } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
