@@ -5,7 +5,6 @@ export const homePage: HomePage = {
   title: "Good work for the trees around your place.",
   introduction:
     "Practical tree care with a clear eye for the land, the season and what needs doing.",
-  heroMediaNote: "A place held for documentary arborist photography.",
   services: [
     { code: "01", title: "Tree pruning", description: "Measured pruning to support healthy structure and long-term growth." },
     { code: "02", title: "Tree removal", description: "Careful removal planning for trees that need to come down." },

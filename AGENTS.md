@@ -54,7 +54,6 @@ When instructed to build a feature:
 1. Use your Atlassian tools to read the feature instructions from Jira
 2. Develop the feature - do not skip any step from the feature-dev 7 step process
 3. Thoroughly test the feature with unit tests and integration tests and fix any issues
-4. Submit a PR using your github tools
 
 ## Color Scheme
 

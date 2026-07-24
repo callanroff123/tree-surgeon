@@ -1,6 +1,8 @@
 import type { HomePage } from "@/types/content";
+import Image from "next/image";
+import logo from "../../../assets/logo-cropped.png";
 
-export function Hero({ content }: { content: Pick<HomePage, "eyebrow" | "title" | "introduction" | "heroMediaNote"> }) {
+export function Hero({ content }: { content: Pick<HomePage, "eyebrow" | "title" | "introduction"> }) {
   return (
     <section className="hero-section">
       <div className="page-shell grid gap-10 py-12 lg:grid-cols-12 lg:gap-8 lg:py-20">
@@ -13,17 +15,17 @@ export function Hero({ content }: { content: Pick<HomePage, "eyebrow" | "title" 
           </div>
         </div>
         <figure className="hero-media lg:col-span-6">
-          <div className="hero-media-art" aria-hidden="true">
-            <svg viewBox="0 0 640 700" role="presentation">
-              <path d="M314 690c16-104 12-219-18-332-15-58-14-113 13-167 22-44 59-80 113-105m-108 272c49-73 116-116 199-131m-191 150c-62-46-133-62-214-47m220 93c42-51 97-78 171-84m-190 74c-52 25-95 68-126 126" />
-              <path d="M333 690c-8-88 17-181 74-279 32-55 40-107 22-156-15-42-45-72-90-92m-13 253c-24-73-71-133-143-180m159 107c35-75 91-137 167-185" />
-              <path d="M191 305c-34-12-59-30-77-55m80 58c-37 6-67 0-91-18m157-129c-9-31-6-59 10-84m181-3c27-22 57-31 90-28m-38 203c29-9 56-7 82 5m-156 210c31 3 58 17 81 41" />
-              <circle cx="153" cy="243" r="20" /><circle cx="220" cy="205" r="28" /><circle cx="277" cy="137" r="31" />
-              <circle cx="421" cy="69" r="32" /><circle cx="489" cy="51" r="25" /><circle cx="526" cy="248" r="29" />
-              <circle cx="573" cy="260" r="19" /><circle cx="523" cy="510" r="30" /><circle cx="569" cy="542" r="21" />
-            </svg>
+          <div className="hero-media-art">
+            <Image
+              className="hero-logo"
+              src={logo}
+              alt="Tree Surgeon logo"
+              width={1480}
+              height={1300}
+              priority
+              sizes="(min-width: 64rem) 50vw, 100vw"
+            />
           </div>
-          <figcaption>{content.heroMediaNote}</figcaption>
         </figure>
       </div>
     </section>

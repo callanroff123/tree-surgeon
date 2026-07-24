@@ -1,5 +1,7 @@
 import type { SiteSettings } from "@/types/content";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "../../../assets/logo-cropped.png";
 
 export function Header({ site }: { site: SiteSettings }) {
   return (
@@ -7,7 +9,8 @@ export function Header({ site }: { site: SiteSettings }) {
       <a className="skip-link" href="#main-content">Skip to content</a>
       <div className="page-shell flex min-h-20 items-center justify-between gap-6">
         <Link className="brand-mark" href="/" aria-label={site.name + " home"}>
-          <span aria-hidden="true">TS</span><span>{site.name}</span>
+          <Image className="brand-logo" src={logo} alt="" width={50} height={44} priority sizes="50px" />
+          <span>{site.name}</span>
         </Link>
         <nav aria-label="Primary navigation">
           <ul className="flex items-center gap-4 overflow-x-auto text-sm font-medium text-forest sm:gap-6">

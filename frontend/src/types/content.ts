@@ -22,7 +22,6 @@ export type HomePage = {
   eyebrow: string;
   title: string;
   introduction: string;
-  heroMediaNote: string;
   services: Service[];
   accreditations: Accreditation[];
   quoteForm: { title: string; introduction: string; services: string[] };
