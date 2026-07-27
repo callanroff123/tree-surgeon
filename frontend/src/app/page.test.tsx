@@ -7,6 +7,8 @@ describe("HomePage", () => {
     expect(screen.getByRole("heading", { level: 1, name: "Good work for the trees around your place." })).toBeInTheDocument();
     expect(screen.getByRole("navigation", { name: "Primary navigation" })).toBeInTheDocument();
     expect(screen.getByAltText("Tree Surgeon logo")).toBeInTheDocument();
+    expect(screen.getByRole("region", { name: "Arborist at work" })).toHaveClass("arborist-photo-section");
+    expect(screen.getByAltText("An arborist working high in a tree.").getAttribute("src")).toContain("res.cloudinary.com%2Fdho1qunu");
     expect(screen.getByRole("link", { name: "Tree Surgeon home" }).querySelector("img")).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Get a quote" })).toBeInTheDocument();
     expect(screen.getByRole("contentinfo")).toBeInTheDocument();

@@ -18,10 +18,16 @@ export type Accreditation = {
   detail: string;
 };
 
+export type HeroImage = {
+  src: string;
+  alt: string;
+};
+
 export type HomePage = {
   eyebrow: string;
   title: string;
   introduction: string;
+  heroImage: HeroImage;
   services: Service[];
   accreditations: Accreditation[];
   quoteForm: { title: string; introduction: string; services: string[] };
