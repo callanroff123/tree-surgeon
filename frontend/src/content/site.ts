@@ -10,6 +10,7 @@ export const siteSettings: SiteSettings = {
     { href: "/contact", label: "Contact" },
   ],
   footerNavigation: [
+    { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/services", label: "Services" },
     { href: "/faq", label: "FAQ" },

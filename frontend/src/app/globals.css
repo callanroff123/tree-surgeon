@@ -31,8 +31,8 @@ a { color: inherit; }
 .text-link { align-items: center; gap: .75rem; border-bottom: 1px solid currentColor; padding-bottom: .35rem; font-size: .875rem; font-weight: 700; text-decoration: none; }
 .text-link span, .submit-button span { font-size: 1.25em; }
 .hero-section { background: var(--color-limestone); }
-.hero-media { display: flex; min-height: 28rem; flex-direction: column; justify-content: space-between; background: var(--color-eucalyptus); color: var(--color-charcoal); padding: 1rem; }
-.hero-media-art { display: grid; flex: 1; place-items: center; overflow: hidden; border: 1px solid rgb(36 34 29 / .35); background: var(--color-paperbark); padding: 1rem; }
+.hero-media { display: flex; min-height: 28rem; flex-direction: column; justify-content: space-between; color: var(--color-charcoal); padding: 1rem; }
+.hero-media-art { display: grid; flex: 1; place-items: center; overflow: hidden; padding: 1rem; }
 .hero-logo { width: 100%; max-height: 29rem; object-fit: contain; }
 .arborist-photo-section { position: relative; min-height: 24rem; overflow: hidden; background: var(--color-eucalyptus); }
 .arborist-photo { object-fit: cover; object-position: center top; }
