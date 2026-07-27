@@ -19,6 +19,7 @@ Read these before every substantial task:
 - Tailwind CSS
 - React
 - Vercel
+- Cloudinary (remote image delivery)
 
 Future:
 
@@ -94,7 +95,7 @@ Colours:
 - When troubleshooting problems, always identify root cause before fixing.
 - PROVE THE PROBLEM FIRST - Don't guess.
 - Try one test at a time. Be methodical.
-- Don't jump to conculsions. Don't apply workarounds.
+- Don't jump to conclusions. Don't apply workarounds.
 - Reproduce consistently.
 
 ## Project status and session continuity

@@ -8,9 +8,9 @@ Phase 2 — Home
 
 ## Current task
 
-TS-2 — Integrate Cloudinary and display the supplied V1 hero image is implemented and locally verified; it remains pending review after its corrected delivery configuration and full-bleed section layout review.
+No active task. TS-2 has been merged into `main`.
 
-## Approved homepage scope
+## Implemented homepage scope
 
 - Server-rendered homepage with navigation, services overview, accreditation placeholders, quote form UI and footer.
 - Static typed content layer; no Sanity, contact delivery, or invented business facts.
@@ -26,4 +26,8 @@ TS-2 — Integrate Cloudinary and display the supplied V1 hero image is implemen
 
 ## Next recommended task
 
-Review TS-2, then add supplied business details and documentary photography.
+Confirm supplied business details and documentary photography before expanding the remaining Phase 2 pages.
+
+## Latest completed work
+
+- TS-2 — Added verified Cloudinary image delivery and a full-bleed, top-anchored arborist photo section before the services ledger; the supplied logo remains in the original hero panel. Merged in PR #2.
