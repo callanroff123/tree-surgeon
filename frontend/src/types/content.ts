@@ -32,3 +32,21 @@ export type HomePage = {
   accreditations: Accreditation[];
   quoteForm: { title: string; introduction: string; services: string[] };
 };
+
+export type Founder = {
+  name: string;
+  role: string;
+  introduction: string;
+  image: HeroImage;
+};
+
+export type AboutPage = {
+  eyebrow: string;
+  title: string;
+  introduction: string;
+  storyEyebrow: string;
+  paragraphs: string[];
+  teamEyebrow: string;
+  foundersHeading: string;
+  founders: Founder[];
+};
