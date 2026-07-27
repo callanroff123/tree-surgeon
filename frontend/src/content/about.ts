@@ -14,7 +14,7 @@ export const aboutPage: AboutPage = {
   foundersHeading: "The people behind the work.",
   founders: [
     {
-      name: "Founder details to be confirmed",
+      name: "Luke Roff",
       role: "Co-Founder & Arborist",
       introduction: "Background, qualifications and arboriculture experience to be confirmed.",
       image: {
