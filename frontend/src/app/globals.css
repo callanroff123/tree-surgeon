@@ -34,6 +34,8 @@ a { color: inherit; }
 .hero-media { display: flex; min-height: 28rem; flex-direction: column; justify-content: space-between; background: var(--color-eucalyptus); color: var(--color-charcoal); padding: 1rem; }
 .hero-media-art { display: grid; flex: 1; place-items: center; overflow: hidden; border: 1px solid rgb(36 34 29 / .35); background: var(--color-paperbark); padding: 1rem; }
 .hero-logo { width: 100%; max-height: 29rem; object-fit: contain; }
+.arborist-photo-section { position: relative; min-height: 24rem; overflow: hidden; background: var(--color-eucalyptus); }
+.arborist-photo { object-fit: cover; object-position: center top; }
 .service-rail { display: grid; grid-auto-columns: minmax(15rem, 19rem); grid-auto-flow: column; gap: 1rem; overflow-x: auto; padding-bottom: .5rem; scroll-snap-type: x mandatory; }
 .service-card { min-height: 18rem; scroll-snap-align: start; border: 1px solid rgb(243 239 230 / .3); padding: 1.5rem; }
 .field-label { display: grid; gap: .5rem; font-size: .875rem; font-weight: 700; }
@@ -45,4 +47,5 @@ a { color: inherit; }
 .submit-button:hover { background: transparent; color: var(--color-charcoal); }
 .footer-list { margin-top: 1rem; padding: 0; list-style: none; font-size: .875rem; line-height: 2; color: rgb(243 239 230 / .7); }
 @media (min-width: 40rem) { .page-shell { width: min(100% - 3rem, 76rem); } }
+@media (min-width: 64rem) { .arborist-photo-section { min-height: min(48vw, 44rem); } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

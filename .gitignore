@@ -1,5 +1,6 @@
 .env
 x.txt
+snippets/
 node_modules
 .next
 coverage
