@@ -4,6 +4,12 @@
 
 Build a production-quality website for a small independent arborist business.
 
+## Current implementation
+
+- `frontend/` currently serves the static Home and About routes with shared header and footer components.
+- Business content is local, typed data in `frontend/src/content/`; the quote form is UI-only.
+- The remaining Phase 2 routes are still to be built.
+
 Read these before every substantial task:
 
 1. docs/vision.md
