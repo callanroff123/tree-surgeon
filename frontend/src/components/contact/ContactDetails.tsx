@@ -8,15 +8,15 @@ export function ContactDetails({
   details: ContactPage["details"];
 }) {
   return (
-    <section aria-labelledby="contact-details-heading" className="border-t border-forest/25 pt-5">
-      <h2 id="contact-details-heading" className="font-serif text-4xl leading-none tracking-[-0.025em] text-forest">
+    <section aria-labelledby="contact-details-heading" className="border-t border-limestone/25 pt-5">
+      <h2 id="contact-details-heading" className="font-serif text-4xl leading-none tracking-[-0.025em] text-limestone">
         {heading}
       </h2>
-      <dl className="mt-8 divide-y divide-forest/15 border-y border-forest/15">
+      <dl className="mt-8 divide-y divide-limestone/20 border-y border-limestone/20">
         {details.map((detail) => (
           <div className="grid gap-2 py-5 sm:grid-cols-2" key={detail.label}>
-            <dt className="text-sm font-bold uppercase tracking-[0.13em] text-bark">{detail.label}</dt>
-            <dd className="leading-7 text-bark">{detail.value}</dd>
+            <dt className="text-sm font-bold uppercase tracking-[0.13em] text-clay-light">{detail.label}</dt>
+            <dd className="leading-7 text-limestone/85">{detail.value}</dd>
           </div>
         ))}
       </dl>

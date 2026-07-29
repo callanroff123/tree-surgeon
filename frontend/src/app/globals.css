@@ -44,7 +44,6 @@ a { color: inherit; }
 .quote-section .field-label input, .quote-section .field-label select, .quote-section .field-label textarea { border-color: var(--color-forest); background: var(--color-limestone); }
 .quote-section .field-label input:focus, .quote-section .field-label select:focus, .quote-section .field-label textarea:focus { outline-color: var(--color-clay); }
 .submit-button { display: inline-flex; align-items: center; gap: .75rem; border: 1px solid var(--color-charcoal); border-radius: 0; background: var(--color-charcoal); color: var(--color-limestone); cursor: pointer; font: inherit; font-weight: 700; padding: .875rem 1rem; }
-.submit-button:hover { background: transparent; color: var(--color-charcoal); }
 .footer-list { margin-top: 1rem; padding: 0; list-style: none; font-size: .875rem; line-height: 2; color: rgb(243 239 230 / .7); }
 @media (min-width: 40rem) { .page-shell { width: min(100% - 3rem, 76rem); } }
 @media (min-width: 64rem) { .arborist-photo-section { min-height: min(48vw, 44rem); } }

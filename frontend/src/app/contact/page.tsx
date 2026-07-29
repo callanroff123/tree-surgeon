@@ -20,7 +20,7 @@ export default function ContactPage() {
       <Header site={siteSettings} />
       <main id="main-content">
         <ContactIntro content={contactPage} />
-        <section className="bg-paperbark py-14 sm:py-20">
+        <section className="bg-forest py-14 text-limestone sm:py-20">
           <div className="page-shell grid gap-12 lg:grid-cols-2 lg:gap-16">
             <ContactDetails
               heading={contactPage.detailsHeading}

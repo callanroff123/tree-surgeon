@@ -9,15 +9,15 @@ export function ContactQuoteForm({
   return (
     <section
       aria-labelledby="contact-quote-heading"
-      className="border-t border-forest/25 pt-5"
+      className="quote-section border-t border-limestone/25 pt-5"
     >
       <h2
         id="contact-quote-heading"
-        className="mt-4 font-serif text-4xl leading-none tracking-[-0.025em] text-forest sm:text-5xl"
+        className="mt-4 font-serif text-4xl leading-none tracking-[-0.025em] text-limestone sm:text-5xl"
       >
         {content.title}
       </h2>
-      <p className="mt-5 max-w-xl leading-7 text-bark">
+      <p className="mt-5 max-w-xl leading-7 text-limestone/85">
         {content.introduction}
       </p>
       <QuoteFormFields content={content} className="mt-8" />
