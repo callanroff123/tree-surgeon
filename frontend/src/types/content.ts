@@ -50,3 +50,17 @@ export type AboutPage = {
   foundersHeading: string;
   founders: Founder[];
 };
+
+export type ContactDetail = {
+  label: string;
+  value: string;
+};
+
+export type ContactPage = {
+  eyebrow: string;
+  title: string;
+  introduction: string;
+  supportingCopy: string;
+  detailsHeading: string;
+  details: ContactDetail[];
+};
