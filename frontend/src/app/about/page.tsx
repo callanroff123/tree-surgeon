@@ -18,7 +18,11 @@ export default function AboutPage() {
       <Header site={siteSettings} />
       <main id="main-content">
         <AboutHero content={aboutPage} />
-        <AboutStory storyEyebrow={aboutPage.storyEyebrow} paragraphs={aboutPage.paragraphs} />
+        <AboutStory
+          storyEyebrow={aboutPage.storyEyebrow}
+          paragraphs={aboutPage.paragraphs}
+          workImage={aboutPage.workImage}
+        />
         <FounderProfiles teamEyebrow={aboutPage.teamEyebrow} foundersHeading={aboutPage.foundersHeading} founders={aboutPage.founders} />
       </main>
       <Footer site={siteSettings} />

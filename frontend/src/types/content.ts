@@ -44,6 +44,7 @@ export type AboutPage = {
   eyebrow: string;
   title: string;
   introduction: string;
+  workImage: HeroImage;
   storyEyebrow: string;
   paragraphs: string[];
   teamEyebrow: string;
@@ -63,4 +64,15 @@ export type ContactPage = {
   supportingCopy: string;
   detailsHeading: string;
   details: ContactDetail[];
+};
+
+export type FaqItem = {
+  question: string;
+  answer: string;
+};
+
+export type FaqPage = {
+  title: string;
+  workImage: HeroImage;
+  items: FaqItem[];
 };
