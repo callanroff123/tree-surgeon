@@ -6,7 +6,9 @@ describe("ContactPage", () => {
     render(<ContactPage />);
 
     expect(screen.getByRole("heading", { level: 1, name: "Contact Us" })).toBeInTheDocument();
+    expect(screen.getByAltText("Tree Surgeon logo")).toBeInTheDocument();
     expect(screen.getByText("We’d love to hear from you.")).toBeInTheDocument();
+    expect(screen.queryByAltText("An arborist working on a eucalyptus trunk with climbing ropes.")).not.toBeInTheDocument();
     expect(screen.getByText("Business address to be confirmed.")).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 2, name: "Get a quote" })).toBeInTheDocument();
     expect(screen.getByLabelText("First name")).toBeRequired();

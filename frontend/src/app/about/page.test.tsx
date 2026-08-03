@@ -6,9 +6,13 @@ describe("AboutPage", () => {
     render(<AboutPage />);
 
     expect(screen.getByRole("heading", { level: 1, name: "Who We Are" })).toBeInTheDocument();
+    expect(screen.getByAltText("Tree Surgeon logo")).toBeInTheDocument();
     expect(screen.getByText("We're two mates who started this business with a shared love for trees, Aussie nature and honest, hands-on work.")).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 2, name: "The people behind the work." })).toBeInTheDocument();
     expect(screen.getAllByText("Co-Founder & Arborist")).toHaveLength(2);
+    const workImage = screen.getByAltText("An arborist working among the branches of a mature tree.");
+    expect(workImage.getAttribute("src")).toContain("luke_tree_kkok0u");
+    expect(workImage.closest("section")).toHaveClass("bg-forest");
     expect(screen.getByAltText("Portrait of a Tree Surgeon co-founder.").getAttribute("src")).toContain("res.cloudinary.com%2Fdho1qunu");
     expect(screen.getByAltText("Placeholder portrait for a Tree Surgeon co-founder.").getAttribute("src")).toContain("placeholder_profile_picture.png");
     expect(screen.getByRole("navigation", { name: "Primary navigation" })).toBeInTheDocument();

@@ -42,7 +42,7 @@ export function Footer({ site }: { site: SiteSettings }) {
             ABN to be confirmed.
           </p>
         </section>
-        <FooterLinks heading="Follow" items={site.socialLinks} />
+        <FooterSocials items={site.socialLinks} />
       </div>
       <div className="border-t border-limestone/20">
         <div className="page-shell py-5 text-xs text-limestone/55">
@@ -50,6 +50,23 @@ export function Footer({ site }: { site: SiteSettings }) {
         </div>
       </div>
     </footer>
+  );
+}
+
+function FooterSocials({ items }: { items: SiteSettings["socialLinks"] }) {
+  return (
+    <section aria-labelledby="footer-follow">
+      <h2 id="footer-follow" className="footer-heading">
+        Follow
+      </h2>
+      <div className="mt-4 flex items-center gap-4 text-limestone sm:gap-6" aria-label="Social links coming soon">
+        {items.map((item) => (
+          <span className="inline-grid size-5 place-items-center" role="img" aria-label={`${item.label} coming soon`} title={`${item.label} coming soon`} key={item.label}>
+            <i className={`bi bi-${item.label.toLowerCase()} text-xl leading-none`} aria-hidden="true" />
+          </span>
+        ))}
+      </div>
+    </section>
   );
 }
 

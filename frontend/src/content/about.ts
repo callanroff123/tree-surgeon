@@ -1,9 +1,13 @@
 import type { AboutPage } from "@/types/content";
 
 export const aboutPage: AboutPage = {
-  eyebrow: "About Tree Surgeon",
+  eyebrow: "About Bees Knees Trees",
   title: "Who We Are",
   introduction: "We're two mates who started this business with a shared love for trees, Aussie nature and honest, hands-on work.",
+  workImage: {
+    src: "https://res.cloudinary.com/dho1qunu/image/upload/f_auto,q_auto,c_fill,g_auto,w_1600,h_1200/luke_tree_kkok0u",
+    alt: "An arborist working among the branches of a mature tree.",
+  },
   storyEyebrow: "Our approach",
   paragraphs: [
     "After years spent working around trees and landscapes, we wanted to build a business that combined professional arboriculture with genuine care for the places we work. For us, every job is an opportunity to improve a property while preserving the health, beauty and safety of the trees that make it unique.",

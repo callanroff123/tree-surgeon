@@ -1,11 +1,11 @@
 import type { SiteSettings } from "@/types/content";
 
 export const siteSettings: SiteSettings = {
-  name: "Tree Surgeon",
+  name: "Bees Knees Trees",
   navigation: [
+    { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/faq", label: "FAQ" },
-    { href: "/blog", label: "Blog" },
     { href: "/gallery", label: "Gallery" },
     { href: "/contact", label: "Contact" },
   ],

@@ -1,7 +1,7 @@
 import type { ContactPage } from "@/types/content";
 
 export const contactPage: ContactPage = {
-  eyebrow: "Contact Tree Surgeon",
+  eyebrow: "Contact Bees Knees Trees",
   title: "Contact Us",
   introduction: "We’d love to hear from you.",
   supportingCopy:
