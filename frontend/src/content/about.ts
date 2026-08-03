@@ -1,7 +1,7 @@
 import type { AboutPage } from "@/types/content";
 
 export const aboutPage: AboutPage = {
-  eyebrow: "About Tree Surgeon",
+  eyebrow: "About Bees Knees Trees",
   title: "Who We Are",
   introduction: "We're two mates who started this business with a shared love for trees, Aussie nature and honest, hands-on work.",
   workImage: {

@@ -1,5 +1,6 @@
 import type { FaqItem, HeroImage } from "@/types/content";
 import Image from "next/image";
+import Link from "next/link";
 
 export function FaqList({
   items,
@@ -16,6 +17,21 @@ export function FaqList({
       <div className="page-shell grid gap-10 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-4">
           <p className="eyebrow text-clay-light">Common questions</p>
+          <div className="mt-6 max-w-sm">
+            <p className="font-serif text-3xl leading-tight">
+              Not sure if your question is listed?
+            </p>
+            <p className="mt-5 leading-7 text-limestone/85">
+              Every property and every tree is different.
+            </p>
+            <p className="mt-4 leading-7 text-limestone/85">
+              If you can&apos;t find the answer you&apos;re looking for, we&apos;re
+              always happy to talk through your situation.
+            </p>
+            <Link className="text-link mt-6 inline-flex" href="/contact">
+              Get in touch <span aria-hidden="true">→</span>
+            </Link>
+          </div>
 
           <figure className="relative mt-8 aspect-[4/5] overflow-hidden bg-eucalyptus">
             <Image

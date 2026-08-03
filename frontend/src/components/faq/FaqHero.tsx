@@ -15,8 +15,8 @@ export function FaqHero({ title }: Pick<FaqPage, "title">) {
               Not sure where to start?
             </p>
             <p className="mt-8 max-w-xl text-lg leading-8 text-bark sm:text-xl">
-              Whether you're wondering if a tree needs to be removed, whether
-              council approval is required, or we how can help, we've answered
+              Whether you&apos;re wondering if a tree needs to be removed, whether
+              council approval is required, or we how can help, we&apos;ve answered
               some of the questions we hear most often from home and landowners.
             </p>
           </div>
