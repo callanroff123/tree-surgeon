@@ -1,6 +1,6 @@
 # Project Status
 
-Last updated: 2026-08-03
+Last updated: 2026-08-04
 
 ## Current phase
 
@@ -8,7 +8,7 @@ Phase 2 — Page expansion
 
 ## Current task
 
-No active implementation task. TS-5 was merged into `main` in PR #5.
+TS-6 — Gallery prototype is implemented on `feature/TS-6-gallery-prototype` and awaiting review.
 
 ## Implemented page scope
 
@@ -35,7 +35,11 @@ No active implementation task. TS-5 was merged into `main` in PR #5.
 
 ## Next recommended task
 
-Confirm the FAQ answers and contact details, then build the Gallery page. Blog work remains deferred.
+Review TS-6 against `snippets/gallery_page_example.png`, then confirm the FAQ answers and contact details. Blog work remains deferred.
+
+## Known limitations
+
+- TS-6 uses an image-only prototype; individual gallery-project routes remain future work.
 
 ## Latest completed work
 
