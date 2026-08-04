@@ -76,3 +76,7 @@ export type FaqPage = {
   workImage: HeroImage;
   items: FaqItem[];
 };
+
+export type GalleryPage = {
+  images: HeroImage[];
+};
