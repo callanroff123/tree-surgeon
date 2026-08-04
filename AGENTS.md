@@ -6,9 +6,10 @@ Build a production-quality website for a small independent arborist business.
 
 ## Current implementation
 
-- `frontend/` currently serves the static Home and About routes with shared header and footer components.
-- Business content is local, typed data in `frontend/src/content/`; the quote form is UI-only.
-- The remaining Phase 2 routes are still to be built.
+- `frontend/` serves static Home, About, Contact and FAQ routes with shared header and footer components.
+- Business content is local, typed data in `frontend/src/content/`; FAQ answers and the quote form remain UI-only placeholders.
+- Bootstrap Icons provide inactive social symbols in the shared header and footer.
+- Gallery is the remaining active Phase 2 page; Blog is intentionally deferred.
 
 Read these before every substantial task:
 

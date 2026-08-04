@@ -4,6 +4,8 @@ Frontend:
 - Next.js
 - TypeScript
 - Tailwind
+- Bootstrap Icons
+- Cloudinary (remote image delivery)
 
 Deployment:
 - Vercel
@@ -11,7 +13,6 @@ Deployment:
 Testing:
 - Vitest
 - React Testing Library
-- Playwright
 
 Future:
 - Sanity

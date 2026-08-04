@@ -1,6 +1,6 @@
 # Project Status
 
-Last updated: 2026-08-02
+Last updated: 2026-08-03
 
 ## Current phase
 
@@ -8,7 +8,7 @@ Phase 2 — Page expansion
 
 ## Current task
 
-TS-5 — FAQ route and approved work imagery on About and FAQ pages implemented and verified locally on `feature/TS-5-faq-imagery`; awaiting review.
+No active implementation task. TS-5 was merged into `main` in PR #5.
 
 ## Implemented page scope
 
@@ -21,7 +21,8 @@ TS-5 — FAQ route and approved work imagery on About and FAQ pages implemented 
 - Server-rendered `/contact` page with shared navigation and footer, static contact-detail placeholders, and the existing UI-only quote form.
 - Server-rendered `/faq` page with an accessible native disclosure list. FAQ answers remain explicit placeholders pending business-approved copy.
 - About and FAQ content sections use their supplied Cloudinary arborist-work photography.
-- Shared footer includes a linked logo and Home navigation item.
+- Shared navigation and sitemap include Home; Blog is intentionally absent until the business is established.
+- Shared header and footer use inactive Bootstrap Icons for Instagram, Facebook and LinkedIn pending confirmed destinations.
 - Next.js application and its tooling live in `frontend/`.
 
 ## Assumptions
@@ -34,10 +35,10 @@ TS-5 — FAQ route and approved work imagery on About and FAQ pages implemented 
 
 ## Next recommended task
 
-Review TS-5, then confirm the FAQ answers and contact details before expanding the remaining Phase 2 pages.
+Confirm the FAQ answers and contact details, then build the Gallery page. Blog work remains deferred.
 
 ## Latest completed work
 
-- TS-5 — Added the accessible `/faq` route with placeholder answers and incorporated the two approved Cloudinary arborist-work images into the About and FAQ content sections. Validated with Vitest, ESLint, TypeScript, and a production build; awaiting review.
+- TS-5 — Added the accessible `/faq` route with placeholder answers, approved imagery on About and FAQ, a contact CTA, Home navigation, and inactive Bootstrap social icons. Validated with Vitest, ESLint, TypeScript and a production build; merged in PR #5.
 - TS-3 — Added the responsive, accessible About page with local typed content and verified image delivery. Validated with Vitest, ESLint, TypeScript and a production build; merged in PR #3.
 - TS-2 — Added verified Cloudinary image delivery and a full-bleed, top-anchored arborist photo section before the services ledger; the supplied logo remains in the original hero panel. Merged in PR #2.

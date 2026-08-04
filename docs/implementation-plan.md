@@ -7,12 +7,12 @@ Phase 1
 - Footer
 
 Phase 2
-- Home
-- About
-- FAQ
-- Gallery
-- Blog
-- Contact
+- Home — complete
+- About — complete
+- FAQ — complete
+- Contact — complete
+- Gallery — next
+- Blog — deferred until the business is established
 
 Phase 3
 - Accessibility

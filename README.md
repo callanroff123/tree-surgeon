@@ -3,4 +3,4 @@
 Modern website for a small environmentally-conscious arborist.
 
 See `/docs` for architecture, design, implementation plan and future roadmap.
-The Next.js application lives in `/frontend`.
+The Next.js application lives in `/frontend` and currently includes Home, About, Contact and FAQ routes.

@@ -4,6 +4,8 @@ Singletons:
 - Site Settings
 - Home Page
 - About Page
+- Contact Page
+- FAQ Page
 
 Collections:
 - Blog Posts

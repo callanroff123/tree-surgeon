@@ -17,3 +17,11 @@ frontend/
     content/
     lib/
     types/
+
+Current routes:
+- `/`
+- `/about`
+- `/contact`
+- `/faq`
+
+Shared header and footer consume `content/site.ts`; page-specific typed content lives alongside it in `content/`.

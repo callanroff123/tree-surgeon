@@ -1,10 +1,11 @@
 # Future Roadmap
 
-1. Static site
-2. Sanity CMS
-3. Contact email
-4. Gallery CMS
-5. Blog CMS
-6. Analytics
-7. Supabase (if required)
-8. Booking system (optional)
+1. Complete the remaining Gallery page
+2. Confirm FAQ answers and contact details
+3. Sanity CMS
+4. Contact email
+5. Gallery CMS
+6. Blog CMS (when the business is established)
+7. Analytics
+8. Supabase (if required)
+9. Booking system (optional)
