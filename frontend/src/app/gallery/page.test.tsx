@@ -11,8 +11,13 @@ describe("GalleryPage", () => {
     expect(within(screen.getByRole("contentinfo")).getByRole("link", { name: "Gallery" })).toHaveAttribute("href", "/gallery");
     expect(screen.getByRole("main").firstElementChild).toHaveClass("hero-section");
     expect(screen.getAllByRole("button", { name: /open gallery image/i })).toHaveLength(galleryPage.images.length);
-    expect(screen.getByAltText("Gallery image 1.").closest("button")).toHaveClass("relative", "aspect-square", "overflow-hidden");
-    expect(screen.getByRole("region", { name: "Gallery" }).firstElementChild).toHaveClass("grid", "grid-cols-2", "lg:grid-cols-4");
+    const firstImage = screen.getByAltText("Gallery image 1.");
+    expect(firstImage.closest("button")).toHaveClass("break-inside-avoid");
+    expect(firstImage.closest("button")).not.toHaveClass("border", "p-1", "bg-paperbark");
+    expect(firstImage.closest("button")).toHaveClass("shadow-[0_0.7rem_1.3rem_rgb(0_0_0_/_0.22)]", "hover:-translate-y-1");
+    expect(firstImage).toHaveAttribute("width", "3024");
+    expect(firstImage).toHaveAttribute("height", "4032");
+    expect(screen.getByRole("region", { name: "Gallery" }).firstElementChild).toHaveClass("columns-2", "sm:columns-3", "lg:columns-4");
     expect(screen.getByAltText("Gallery image 1.").getAttribute("src")).toContain("tree5_mw7atd");
   });
 

@@ -1,11 +1,11 @@
 "use client";
 
-import type { HeroImage } from "@/types/content";
+import type { GalleryImage } from "@/types/content";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-export function GalleryGrid({ images }: { images: HeroImage[] }) {
-  const [selectedImage, setSelectedImage] = useState<HeroImage | null>(null);
+export function GalleryGrid({ images }: { images: GalleryImage[] }) {
+  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const selectedTrigger = useRef<HTMLButtonElement | null>(null);
   const dialog = useRef<HTMLDivElement | null>(null);
 
@@ -32,11 +32,11 @@ export function GalleryGrid({ images }: { images: HeroImage[] }) {
   }, [selectedImage]);
 
   return (
-    <section className="bg-charcoal py-4 sm:py-6 lg:py-12" aria-label="Gallery">
-      <div className="page-shell grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 lg:gap-8">
+    <section className="bg-forest py-6 sm:py-10 lg:py-16" aria-label="Gallery">
+      <div className="page-shell columns-2 gap-3 sm:columns-3 sm:gap-5 lg:columns-4 lg:gap-8">
         {images.map((image, index) => (
           <button
-            className="group relative aspect-square overflow-hidden rounded-[.35rem] border-2 border-limestone bg-charcoal"
+            className="mb-3 block w-full break-inside-avoid bg-transparent shadow-[0_0.7rem_1.3rem_rgb(0_0_0_/_0.22)] transition-transform duration-200 hover:-translate-y-1 motion-reduce:transition-none sm:mb-5 lg:mb-8"
             key={image.src}
             type="button"
             aria-label={`Open gallery image ${index + 1}`}
@@ -46,11 +46,12 @@ export function GalleryGrid({ images }: { images: HeroImage[] }) {
             }}
           >
             <Image
-              className="object-cover transition-transform duration-200 group-hover:scale-[1.025] motion-reduce:transition-none"
+              className="h-auto w-full"
               src={image.src}
               alt={image.alt}
-              fill
-              sizes="(min-width: 64rem) 25vw, (min-width: 40rem) 33vw, 50vw"
+              width={image.width}
+              height={image.height}
+              sizes="(min-width: 64rem) 18rem, (min-width: 40rem) 14rem, 45vw"
               priority={index < 2}
             />
           </button>
@@ -67,11 +68,11 @@ export function GalleryGrid({ images }: { images: HeroImage[] }) {
           onClick={close}
         >
           <Image
-            className="max-h-[calc(100svh-2rem)] w-full max-w-3xl cursor-default object-contain"
+            className="max-h-[calc(100svh-2rem)] max-w-full cursor-zoom-out object-contain"
             src={selectedImage.src}
             alt={selectedImage.alt}
-            width={960}
-            height={960}
+            width={selectedImage.width}
+            height={selectedImage.height}
             sizes="(min-width: 64rem) 52rem, calc(100vw - 2rem)"
             priority
           />

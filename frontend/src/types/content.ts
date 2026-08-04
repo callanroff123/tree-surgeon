@@ -78,5 +78,10 @@ export type FaqPage = {
 };
 
 export type GalleryPage = {
-  images: HeroImage[];
+  images: GalleryImage[];
+};
+
+export type GalleryImage = HeroImage & {
+  width: number;
+  height: number;
 };

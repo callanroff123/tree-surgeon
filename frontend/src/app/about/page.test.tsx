@@ -22,7 +22,7 @@ describe("AboutPage", () => {
   it("keeps every About navigation link pointed at the About route", () => {
     render(<AboutPage />);
 
-    expect(screen.getAllByRole("link", { name: "About" })).toHaveLength(2);
+    expect(screen.getAllByRole("link", { name: "About" })).toHaveLength(3);
     screen.getAllByRole("link", { name: "About" }).forEach((link) => expect(link).toHaveAttribute("href", "/about"));
   });
 });
